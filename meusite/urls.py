@@ -15,8 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from . import views # Para poder renderizar o template home
 
 urlpatterns = [
+    path('', views.index), # home
     path('admin/', admin.site.urls),
     path('blog/', include('blog.urls')),
     path('sobre/', include('sobre.urls')),
