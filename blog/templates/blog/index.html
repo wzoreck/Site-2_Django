@@ -1,1 +1,8 @@
-<h1>Teste</h1>
+{% extends 'base.html' %} <!-- Estamos estendendo de base.html que é global para os apps -->
+
+{%block 'titulo'%}Teste Titulo{%endblock%}
+
+{%block 'conteudo'%}
+    <h1>Teste</h1>
+
+{%endblock%}
